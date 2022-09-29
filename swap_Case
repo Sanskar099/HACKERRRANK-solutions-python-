@@ -1,0 +1,19 @@
+SWAP CASE:
+CODE:
+def swap_case(s):
+    l = []
+    for i in s:
+        if i.lower() == i:
+            l.append(i.upper())
+        elif i.upper() == i:
+            l.append(i.lower())
+        else:
+            l.append(i)
+    ss = ''
+    for r in range(0,len(l)):
+        ss = ss + l[r]
+    return(ss)
+if __name__ == '__main__':
+    s = input()
+    result = swap_case(s)
+    print(result)
